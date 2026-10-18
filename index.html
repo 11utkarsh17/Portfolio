@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Utkarsh Kumar Science Writing</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&family=Literata:opsz,wght@7..72,400;7..72,600;7..72,700&display=swap">
+<style>
+/* Layout: one reading column with a narrow meta rail on wide screens; two samples, jump links on top. */
+:root{
+  --bg:#F5F7FA; --surface:#FFFFFF; --fg:#17212B; --muted:#5A6672; --line:#D5DCE4;
+  --accent:#1F4E79; --accent-soft:#E3ECF5; --ray:#B7791F;
+  --display:"Literata",Georgia,"Times New Roman",serif;
+  --ui:"Instrument Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0F161D; --surface:#16202A; --fg:#E6ECF2; --muted:#9AA7B4; --line:#2A3846;
+  --accent:#8DB6DE; --accent-soft:#1C2C3C; --ray:#E3B05A; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0F161D; --surface:#16202A; --fg:#E6ECF2; --muted:#9AA7B4; --line:#2A3846;
+  --accent:#8DB6DE; --accent-soft:#1C2C3C; --ray:#E3B05A; color-scheme:dark}
+*{box-sizing:border-box}html{color-scheme:light dark}body{margin:0}
+body{background:var(--bg);color:var(--fg);font-family:var(--display);font-size:17px;line-height:1.7;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:0}
+.wrap{max-width:960px;margin:0 auto}
+header{padding-block:48px 28px;border-bottom:1px solid var(--line)}
+.eyebrow{font-family:var(--ui);font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);margin:0 0 10px;font-weight:600}
+h1{font-size:clamp(34px,6vw,52px);line-height:1.1;margin:0 0 14px;font-weight:700;text-wrap:balance}
+.lede{font-size:19px;max-width:60ch;margin:0;color:var(--muted)}
+nav{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px;font-family:var(--ui)}
+nav a{color:var(--accent);text-decoration:none;border:1px solid var(--line);background:var(--surface);padding:8px 14px;border-radius:6px;font-size:14px;font-weight:500}
+nav a:hover,nav a:focus-visible{border-color:var(--accent);outline:none}
+section{padding-block:40px;border-bottom:1px solid var(--line)}
+h2{font-size:26px;line-height:1.25;margin:0 0 18px;text-wrap:balance}
+.grid{display:grid;grid-template-columns:200px minmax(0,1fr);gap:40px}
+.rail{font-family:var(--ui);font-size:14px;color:var(--muted)}
+.rail dl{margin:0}.rail dt{font-size:12px;letter-spacing:.1em;text-transform:uppercase;margin-top:14px;color:var(--accent);font-weight:600}
+.rail dd{margin:2px 0 0}
+.text{max-width:66ch}
+h3{font-family:var(--ui);font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);margin:28px 0 4px;font-weight:600}
+p{margin:0 0 14px}
+ul.approach{margin:0;padding-left:20px;max-width:62ch} ul.approach li{margin-bottom:8px}
+.note{background:var(--accent-soft);border-radius:8px;padding:16px 20px;font-size:16px;max-width:66ch}
+.diagram{margin:24px 0 8px;background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:16px;max-width:460px}
+.diagram svg{width:100%;height:auto;display:block;font-family:var(--ui);fill:var(--fg)}
+.diagram text{font-size:12px} .diagram text.small{font-size:11px;fill:var(--muted)}
+.diagram .earth{fill:var(--accent-soft);stroke:var(--accent);stroke-width:1.5}
+.diagram .radius{stroke:var(--muted);stroke-width:1;stroke-dasharray:4 3}
+.diagram .ray{stroke:var(--ray);stroke-width:2}
+.diagram .stick{stroke:var(--fg);stroke-width:2.5;stroke-linecap:round}
+.diagram .arc{fill:none;stroke:var(--accent);stroke-width:1.5}
+.diagram .dot{fill:var(--accent)}
+figcaption{font-family:var(--ui);font-size:13px;color:var(--muted);margin-top:8px}
+.contact{font-family:var(--ui);font-size:16px;line-height:1.8}
+.contact a{color:var(--accent)} .contact span{user-select:all}
+footer{font-family:var(--ui);font-size:13px;color:var(--muted);padding-block:24px 48px}
+@media (max-width:760px){.grid{grid-template-columns:minmax(0,1fr);gap:8px}.rail dl{display:flex;flex-wrap:wrap;gap:4px 24px}.rail dt{margin-top:0}body{font-size:16.5px}}
+@media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+<p class="eyebrow">Science writing portfolio</p>
+<h1>Utkarsh Kumar</h1>
+<p class="lede">Research-led educational scripts in Hinglish. Two original samples on the history of science and physics.</p>
+<nav aria-label="Sections"><a href="#about">About</a><a href="#sample-1">Eratosthenes</a><a href="#sample-2">Time dilation</a><a href="#contact">Contact</a></nav>
+</header>
+
+<section id="about">
+<h2>About</h2>
+<div class="text">
+<p>I am a Computer Science graduate (B.Tech, 2026) interested in science communication, technology, research and educational storytelling. I enjoy exploring complex ideas and explaining them in simple, engaging language for a broad Indian audience.</p>
+<p>These are original sample scripts prepared to show my approach to research-led storytelling. They are portfolio samples, not commissioned or published work.</p>
+<h3>How I write</h3>
+<ul class="approach">
+<li>Start with a curiosity-driven hook and a clear central question.</li>
+<li>Explain scientific ideas in accessible Hinglish without losing accuracy.</li>
+<li>Use analogies and step-by-step reasoning where they genuinely help.</li>
+<li>Acknowledge uncertainty, assumptions and limits of historical evidence.</li>
+<li>Verify factual claims against reliable sources before publication.</li>
+</ul>
+</div>
+</section>
+
+<section id="sample-1">
+<div class="grid">
+<aside class="rail"><dl><dt>Sample 1</dt><dd>History of science</dd><dt>Format</dt><dd>Hinglish video script</dd><dt>Length</dt><dd>640 words</dd></dl></aside>
+<div class="text">
+<h2>How Eratosthenes Measured the Earth with a Stick</h2>
+<figure class="diagram">
+<svg viewBox="0 0 360 250" role="img" aria-labelledby="dt dd">
+<title id="dt">Eratosthenes geometry</title>
+<desc id="dd">Two parallel Sun rays hit the Earth at Syene and Alexandria. The angle between the ray and the vertical stick at Alexandria equals the angle at the Earth's centre between the two cities.</desc>
+<circle cx="180" cy="170" r="110" class="earth"/>
+<line x1="180" y1="170" x2="180" y2="60" class="radius"/>
+<line x1="180" y1="170" x2="231.6" y2="72.9" class="radius"/>
+<line x1="180" y1="22" x2="180" y2="60" class="ray"/>
+<line x1="231.6" y1="22" x2="231.6" y2="72.9" class="ray"/>
+<line x1="180" y1="60" x2="180" y2="20" class="stick"/>
+<line x1="231.6" y1="72.9" x2="250.4" y2="37.6" class="stick"/>
+<path d="M231.6 50.9 A22 22 0 0 1 241.9 53.6" class="arc"/>
+<path d="M180 130 A40 40 0 0 1 198.8 134.7" class="arc"/>
+<circle cx="180" cy="60" r="3.5" class="dot"/>
+<circle cx="231.6" cy="72.9" r="3.5" class="dot"/>
+<text x="170" y="64" text-anchor="end">Syene</text>
+<text x="244" y="86" >Alexandria</text>
+<text x="250" y="48" class="small">7.2°</text>
+<text x="190" y="124" class="small">7.2°</text>
+<text x="180" y="12" text-anchor="middle" class="small">Sun ki rays (almost parallel)</text>
+<text x="180" y="190" text-anchor="middle" class="small">Earth ka centre</text>
+</svg>
+<figcaption>Angle exaggerated for clarity. The stick's angle to the Sun's ray at Alexandria equals the angle at Earth's centre between the two cities.</figcaption>
+</figure>
+<h3>Opening hook</h3>
+<p>Socho, aaj se lagbhag 2,200 saal pehle, jab na satellites the, na Google Maps, na space mein bheje jaane wale rockets. Tab ek Greek scholar ne sirf sunlight, ek stick, aur geometry ki help se Earth ka size estimate karne ki koshish ki. Aur sabse surprising baat? Uska idea itna clever tha ki aaj bhi science classrooms mein discuss kiya jaata hai.</p>
+<h3>The question</h3>
+<p>Aaj Earth ka circumference—yaani planet ke around ek complete circle ki distance—measure karne ke liye hum satellites aur precise instruments use kar sakte hain. Lekin ancient world mein yeh kaam kaise hota? Eratosthenes naam ke scholar ne around 240 BCE isi problem par kaam kiya. Woh Alexandria, Egypt ki famous library se associated the, jahan scholars different subjects par research karte the.</p>
+<h3>Two cities, one Sun</h3>
+<p>Story ka main clue do cities se aata hai: Syene, jise aaj Aswan ke naam se jaana jaata hai, aur Alexandria. Eratosthenes ko bataya gaya tha ki saal ke ek particular din, summer solstice ke aas-paas, Syene mein dopahar ke time Sun itna seedha overhead hota tha ki ek deep well ke bottom tak sunlight pahunch sakti thi. Vertical objects ki shadow bahut chhoti ya practically absent hoti thi. Alexandria, jo Syene ke north mein thi, wahan same time par ek vertical stick shadow cast karti thi. Iska matlab tha ki Sun ki rays dono locations par exactly same angle se nahi aa rahi thi—ya, more precisely, Earth ki curved surface ki wajah se local vertical directions different the.</p>
+<h3>The measurement</h3>
+<p>Eratosthenes ne Alexandria mein ek vertical stick ya gnomon aur uski shadow ke angle ko observe kiya. Traditional account ke mutabik angle approximately 7.2 degrees tha. Ab yahan ek important idea hai: 7.2 degrees, 360 degrees ka exactly one-fiftieth part hai. Kyunki 360 divided by 7.2 equals 50. Agar Earth ko roughly spherical maana jaaye, toh do cities ke beech ka central angle Earth ke complete circle ka ek fraction represent karta hai. Agar Alexandria aur Syene ke beech ka distance Earth ke circumference ka one-fiftieth hai, toh total circumference unke beech ke distance ka 50 times hoga.</p>
+<h3>The calculation</h3>
+<p>Maan lo dono cities ke beech ka distance around 5,000 stadia maana gaya tha. Ek stadion ki exact length uncertain hai, kyunki ancient world mein length units ke variants the. Isliye modern kilometres mein conversion par debate hoti hai. Lekin method samajhna important hai: 5,000 × 50 = 250,000 stadia. Kuch historical accounts mein Eratosthenes ke result ko 250,000 stadia, aur kuch later accounts mein 252,000 stadia ke roop mein report kiya jaata hai. Stadion ki length ke hisaab se modern conversion badal sakta hai. Isliye ek fixed kilometre number ko bilkul exact kehna misleading hoga. Phir bhi, result remarkable tha, especially considering the tools available at the time.</p>
+<h3>Why it worked—and what could go wrong</h3>
+<p>Is experiment ke peeche geometry thi. Sun ki rays Earth tak almost parallel aati hain because the Sun is extremely far away. Agar Earth flat hoti, toh same time par vertical sticks ke shadows ka angle ideally same hota. Lekin curved Earth par local vertical directions gradually change hoti hain, aur shadows ke angle mein difference dikhta hai. Of course, measurement perfect nahi thi. Syene aur Alexandria exactly same meridian par nahi hain; distance estimate approximate tha; solstice observation aur shadow measurement mein error ho sakta tha; aur stadion ki length uncertain hai. Lekin science ka magic yahi hai: imperfect tools ke saath bhi ek carefully designed method, random guess se kahin zyada reliable answer de sakta hai.</p>
+<h3>Closing</h3>
+<p>Eratosthenes ki story humein yaad dilati hai ki science sirf expensive machines ka naam nahi. Science ka core hai—sahi question poochhna, observation karna, assumptions ko samajhna, aur evidence se conclusion nikalna. Ek stick ne akela Earth ka size nahi bataya. Stick, shadow, do locations ke observations, distance ka estimate, aur geometry—yeh sab milkar ek powerful measurement banaate hain. Kabhi-kabhi world ko samajhne ke liye technology se pehle curiosity ki zaroorat hoti hai.</p>
+</div></div>
+</section>
+
+<section id="sample-2">
+<div class="grid">
+<aside class="rail"><dl><dt>Sample 2</dt><dd>Physics</dd><dt>Format</dt><dd>Hinglish video script</dd><dt>Length</dt><dd>749 words</dd></dl></aside>
+<div class="text">
+<h2>Why Does Time Slow Down Near the Speed of Light?</h2>
+<h3>Opening hook</h3>
+<p>Imagine karo, do twins hain. Ek Earth par rehta hai, aur doosra ek spaceship mein space ke through bahut high speed se travel karta hai. Jab traveller wapas aata hai, toh kya dono ki age exactly same hogi? Einstein ki relativity ke according, kuch conditions mein answer no ho sakta hai. Lekin iska matlab yeh nahi ki kisi ko apni watch slow motion mein chalti hui dikhegi. Yahin se time dilation ki fascinating story start hoti hai.</p>
+<h3>The everyday intuition</h3>
+<p>Daily life mein hum time ko universal samajhte hain. Delhi mein 5 baje hain, toh lagta hai har jagah aur har observer ke liye time ek hi rate se pass ho raha hoga. Normal speeds par yeh assumption kaafi useful hai. Car, train, ya airplane ki speed par relativistic effects itne tiny hote hain ki hum unhe directly notice nahi karte. Lekin light ki speed—vacuum mein around 300,000 kilometres per second—physics mein ek special role play karti hai. Einstein ki special relativity ke mutabik, vacuum mein light ki speed inertial observers ke liye same hoti hai. Space aur time ke measurements ko isi fact ke saath consistent rehna padta hai.</p>
+<h3>A thought experiment with light</h3>
+<p>Ek simple thought experiment imagine karo: spaceship ke floor aur ceiling ke beech ek light pulse bounce kar rahi hai. Ship ke andar baitha observer light ko seedha upar aur neeche travel karte dekhega. Lekin Earth par khada observer, jo ship ko side mein move karte dekh raha hai, usi light ko diagonal path par travel karta hua describe karega. Earth observer ke perspective se light ka path longer hai. Phir bhi dono observers light ki speed ko same measure karte hain. Agar speed same hai aur ek observer ke hisaab se light ko longer distance travel karna hai, toh us journey ke liye zyada time pass hona chahiye. Isi reasoning se moving clock ka time stationary observer ke comparison mein dilated measure hota hai.</p>
+<h3>What it actually means</h3>
+<p>Time dilation ka matlab yeh nahi ki traveller ko apni body, thoughts, ya watch mein koi strange slowdown feel hoga. Traveller ke local frame mein uski watch normally tick karegi aur daily experience ordinary hoga. Difference tab samajh aata hai jab observers apne measurements compare karte hain, ya jab traveller different paths follow karke wapas milte hain. Special relativity mein relative motion ke kaaran moving clocks ke elapsed time ka comparison hota hai. Twin-paradox scenario mein returning twin ka path spacetime mein different hota hai, aur turnaround ke kaaran dono situations fully symmetric nahi rehti. Isliye reunion par accumulated elapsed time different ho sakta hai.</p>
+<h3>Real-world evidence</h3>
+<p>Yeh sirf thought experiment nahi hai. Fast-moving particles, jaise muons, apne rest-frame lifetime ke hisaab se bahut short-lived hote hain. Lekin atmosphere mein high speed se move karte hue, Earth observers unmein se zyada particles ko surface tak pahunchte dekh sakte hain than simple non-relativistic reasoning would suggest. Relativity is observation ko explain karne mein help karti hai. Satellite navigation systems ko bhi precise timing ki zaroorat hoti hai. GPS satellites ke clocks par motion-related special-relativistic effects aur Earth ke gravity field se related general-relativistic effects dono matter karte hain. System mein in effects ko account na kiya jaaye, toh position calculations time ke saath inaccurate ho sakti hain.</p>
+<h3>Does time stop at light speed?</h3>
+<p>Ek common misconception hai ki agar koi object light ki speed ke paas jaaye, toh time completely stop ho jaata hai. Massive objects—jaise humans ya spaceships—vacuum mein light ki speed tak accelerate nahi kar sakte, kyunki iske liye unlimited energy ki zaroorat padegi according to special relativity. Isliye hum yeh imagine nahi kar sakte ki ek human light speed par travel karke apni watch ko zero time pass hote dekhega. Jitni speed light ki speed ke close hoti hai, utna hi moving clock ke elapsed time ka difference significant ho sakta hai, as measured by another inertial observer. Lekin exact claim hamesha specify karna chahiye: kaun observe kar raha hai, kaunsa path hai, aur kaunse events compare kiye ja rahe hain.</p>
+<h3>Closing</h3>
+<p>Relativity humein batati hai ki space aur time fixed background nahi hain jaisa hum everyday life mein assume karte hain. Motion ke saath measurements change ho sakte hain, lekin physics ke laws consistent rehte hain. Is idea ka beauty yeh hai ki universe ko samajhne ke liye kabhi-kabhi apni intuition ko challenge karna padta hai. Hamari intuition slow speeds aur everyday distances ke liye evolve hui hai; cosmos ke extreme conditions mein nature ke rules ko equations aur experiments se samajhna padta hai. Aur isi liye science interesting hai: woh sirf answers nahi deti, balki humein better questions poochhna bhi sikhati hai.</p>
+</div></div>
+</section>
+
+<section id="note">
+<div class="note"><strong>Research and editorial note.</strong> These samples are original drafts for portfolio use. Before production, technical and historical claims should be fact-checked against primary or reputable secondary sources, and citations added to the final script. The Eratosthenes sample notes the uncertainty around the ancient stadion unit. The relativity sample separates special-relativistic time dilation from gravitational effects in GPS.</div>
+</section>
+
+<section id="contact" class="contact">
+<h2>Contact</h2>
+<div>Email: <span>11utkarsh17@gmail.com</span></div>
+<div>LinkedIn: <a href="https://www.linkedin.com/in/utkarsh-kumar-9994b8274" rel="noopener">linkedin.com/in/utkarsh-kumar-9994b8274</a></div>
+<div>GitHub: <a href="https://github.com/11utkarsh17" rel="noopener">github.com/11utkarsh17</a></div>
+<div>Noida, Uttar Pradesh</div>
+</section>
+<footer>Utkarsh Kumar, Science Writing Portfolio</footer>
+</div>
+</body>
+</html>
